@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,8 +14,9 @@
         --text-charcoal: #333333;
         --text-sage: #4D5842;
         --accent-lilac: #E7E3F0;
+        --accent-lavender: #D7D3DE;
         --accent-tan: #F1EBE4;
-        --accent-blue-grey: #C0C9D1;
+        --accent-stone: #E8E2D9;
       }
       body {
         font-family: 'Inter', sans-serif;
@@ -31,37 +31,49 @@
         letter-spacing: -0.01em;
       }
       .arched-image {
-        border-radius: 999px 999px 0 0;
+        border-radius: 1000px 1000px 0 0;
+      }
+      .img-placeholder {
+        background-color: #E8E2D9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.65rem;
+        font-weight: 500;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: rgba(77, 88, 66, 0.4);
+        width: 100%;
+        height: 100%;
       }
       
-      /* Scroll Reveal Classes */
       .reveal {
         opacity: 0;
-        transform: translateY(30px);
-        transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+        transform: translateY(15px);
+        transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       }
       .reveal.active {
         opacity: 1;
         transform: translateY(0);
       }
 
-      /* Custom scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: var(--bg-primary);
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #E8E2D9;
-        border-radius: 10px;
-      }
-
-      /* Transitions */
-      .fade-in { animation: fadeIn 1s forwards; }
+      .fade-in { animation: fadeIn 0.8s ease-out forwards; }
       @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
+      }
+
+      button {
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .section-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
       }
     </style>
     <script type="importmap">

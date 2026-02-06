@@ -29,8 +29,12 @@ const FAQs: React.FC = () => {
   return (
     <section className="py-24 px-8 max-w-[1440px] mx-auto flex flex-col md:flex-row gap-16 md:gap-24 bg-[#F2F5F7]">
       <div className="w-full md:w-[40%]">
-        <div className="arched-image overflow-hidden w-full aspect-[3/4] shadow-2xl relative bg-[#E8E2D9] border border-[#1A1E22]/10 flex items-center justify-center">
-          <span className="text-4xl text-[#1A1E22]/20 serif-font italic font-light">img9</span>
+        <div className="arched-image overflow-hidden w-full aspect-[3/4] shadow-2xl relative bg-[#E8E2D9] border border-[#1A1E22]/10">
+          <img
+            src="/assets/images/img_9.jpg"
+            alt="Frequently Asked Questions"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
       <div className="w-full md:w-[60%] flex flex-col justify-center">

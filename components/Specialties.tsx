@@ -1,16 +1,16 @@
 import React from 'react';
 
-const SpecialtyCard: React.FC<{ title: string; description: string; index: number }> = ({ title, description, index }) => (
-  <div className="bg-[#E8E2D9] border border-[#2D3339]/10 p-12 flex flex-col h-full items-center text-center animate-fade-in group shadow-sm hover:shadow-md transition-shadow">
-    <h3 className="text-[22px] md:text-[24px] serif-font text-[#2D3339] mb-8 font-medium tracking-tight">
+const SpecialtyCard: React.FC<{ title: string; description: string; index: number; className?: string }> = ({ title, description, index, className }) => (
+  <div className={`bg-[#c8d4e5] rounded-3xl shadow-sm p-12 flex flex-col h-full items-center text-center animate-fade-in group hover:shadow-md transition-all duration-500 border border-[#2c3f70]/5 ${className}`}>
+    <h3 className="text-[22px] md:text-[24px] serif-font text-[#2c3f70] mb-8 font-bold tracking-tight">
       {title}
     </h3>
-    <p className="text-base font-light text-[#2D3339]/80 leading-relaxed mb-16 px-2 flex-grow">
+    <p className="text-base font-normal text-[#2c3f70]/80 leading-relaxed mb-16 px-2 flex-grow">
       {description}
     </p>
-    <div className="w-56 h-56 rounded-full overflow-hidden shadow-lg bg-white/20 flex items-center justify-center transition-transform duration-700 group-hover:scale-105">
-      <div className="w-full h-full bg-[#FAF8F6] flex items-center justify-center">
-        <span className="text-3xl text-[#2D3339]/20 serif-font font-light">{index}</span>
+    <div className="w-56 h-56 rounded-full overflow-hidden shadow-lg bg-[#e8ebed]/50 flex items-center justify-center transition-transform duration-700 group-hover:scale-105">
+      <div className="w-full h-full bg-[#e8ebed]/50 flex items-center justify-center">
+        <span className="text-3xl text-[#2c3f70]/20 serif-font font-bold">{index}</span>
       </div>
     </div>
   </div>
@@ -36,14 +36,17 @@ const Specialties: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 px-10 bg-[#E0E5E9]">
+    <section className="py-24 px-10 bg-[#e8ebed]">
       <div className="max-w-[1440px] mx-auto">
-        <h2 className="text-4xl md:text-[4rem] serif-font text-[#2D3339] mb-20 font-light text-center">
+        <h2 className="text-4xl md:text-6xl serif-font text-[#2c3f70] mb-20 font-bold text-center">
           Specialized Support
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {specialties.map((s, idx) => (
-            <SpecialtyCard key={idx} {...s} />
+            <SpecialtyCard
+              key={idx}
+              {...s}
+            />
           ))}
         </div>
       </div>

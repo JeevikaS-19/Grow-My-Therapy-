@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const BlogCard: React.FC<{ title: string; date: string; index: number; slug: string }> = ({ title, date, index, slug }) => (
   <Link to={`/blog/${slug}`} className="group cursor-pointer block">
-    <div className="aspect-[16/10] overflow-hidden mb-6 bg-[#D1D9E0] flex items-center justify-center border border-[#2D3339]/5">
-      <span className="text-3xl text-[#2D3339]/20 serif-font italic font-light">img{index}</span>
+    <div className="aspect-[16/10] overflow-hidden mb-6 bg-gray-200 flex items-center justify-center border border-[#2c3f70]/5">
+      <span className="text-3xl text-[#2c3f70]/20 serif-font italic font-bold">img{index}</span>
     </div>
-    <p className="text-[10px] text-[#2D3339]/50 tracking-widest mb-2 font-medium">{date}</p>
-    <h3 className="text-2xl md:text-4xl serif-font text-[#2D3339] mb-4 font-light italic">{title}</h3>
-    <span className="text-[10px] uppercase tracking-widest font-bold border-b-2 border-[#C28E7E] pb-1 group-hover:bg-[#C28E7E] group-hover:text-white transition-all">
+    <p className="text-[10px] text-[#2c3f70]/50 tracking-widest mb-2 font-bold">{date}</p>
+    <h3 className="text-2xl md:text-4xl serif-font text-[#2c3f70] mb-4 font-bold italic">{title}</h3>
+    <span className="text-[10px] uppercase tracking-widest font-bold border-b-2 border-[#2c3f70] pb-1 group-hover:bg-[#2c3f70] group-hover:text-white transition-all">
       Read More
     </span>
   </Link>
@@ -16,18 +16,18 @@ const BlogCard: React.FC<{ title: string; date: string; index: number; slug: str
 
 const BlogPage: React.FC = () => {
   return (
-    <div className="pt-56 px-10 pb-20 max-w-[1440px] mx-auto">
+    <div className="pt-56 px-10 pb-20 max-w-[1440px] mx-auto bg-[#e8ebed]">
       <div className="flex flex-col md:flex-row items-center gap-20 mb-32">
         <div className="w-full md:w-1/3">
-          <div className="arched-image overflow-hidden aspect-[3/4] shadow-xl bg-[#D1D9E0] flex items-center justify-center text-center">
-            <span className="text-4xl text-[#2D3339]/20 serif-font italic font-light">img10</span>
+          <div className="arched-image overflow-hidden aspect-[3/4] shadow-xl bg-gray-200 flex items-center justify-center text-center border border-[#2c3f70]/5">
+            <span className="text-4xl text-[#2c3f70]/20 serif-font italic font-bold">img10</span>
           </div>
         </div>
         <div className="w-full md:w-2/3">
-          <h1 className="text-7xl md:text-[6.5rem] serif-font text-[#2D3339] mb-8 font-light leading-tight">The Steady Ground Blog</h1>
-          <div className="max-w-2xl space-y-6 text-2xl font-light text-[#2D3339]/70">
+          <h1 className="text-7xl md:text-8xl serif-font text-[#2c3f70] mb-8 font-bold leading-tight">The Steady Ground Blog</h1>
+          <div className="max-w-2xl space-y-6 text-2xl font-normal text-[#2c3f70]/70">
             <p>Reflections on healing, resilience, and finding your own steady ground in a fast-paced world.</p>
-            <p className="font-bold text-[#C28E7E]">Welcome.</p>
+            <p className="font-bold text-[#2c3f70]">Welcome.</p>
           </div>
         </div>
       </div>
@@ -59,17 +59,17 @@ const BlogPage: React.FC = () => {
         />
       </div>
 
-      <div className="mt-40 bg-[#C28E7E] p-20 text-center text-white shadow-2xl">
+      <div className="mt-40 bg-[#2c3f70] p-20 text-center text-white shadow-2xl">
         <div className="max-w-2xl mx-auto border border-white/30 p-16">
-          <h2 className="text-5xl serif-font mb-6 font-light">Subscribe</h2>
-          <p className="text-lg font-light opacity-80 mb-10">Sign up with your email address to receive news and updates from my practice.</p>
+          <h2 className="text-5xl serif-font mb-6 font-bold">Subscribe</h2>
+          <p className="text-lg font-normal opacity-80 mb-10">Sign up with your email address to receive news and updates from my practice.</p>
           <div className="flex flex-col md:flex-row gap-4">
             <input
               type="email"
               placeholder="Email Address"
-              className="flex-grow bg-[#E0E5E9] text-[#2D3339] px-6 py-4 text-sm focus:outline-none placeholder-[#2D3339]/40"
+              className="flex-grow bg-[#e8ebed] text-[#2c3f70] px-6 py-4 text-sm focus:outline-none placeholder-[#2c3f70]/40"
             />
-            <button className="bg-transparent border border-white px-10 py-6 text-xs uppercase tracking-widest font-bold hover:bg-white hover:text-[#C28E7E] transition-all">
+            <button className="bg-transparent border border-white px-10 py-6 text-xs uppercase tracking-widest font-bold hover:bg-white hover:text-[#2c3f70] transition-all">
               SIGN UP
             </button>
           </div>

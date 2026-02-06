@@ -7,13 +7,14 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                background: "#E0E5E9",
-                slate: "#2D3339",
-                accent: "#C28E7E",
+                background: "#e8ebed",
+                navy: "#2c3f70",
+                authorityRed: "#a5231c",
+                cardBlue: "#c8d4e5",
             },
             fontFamily: {
-                sans: ['Satoshi', 'sans-serif'],
-                serif: ['Bricolage Grotesque', 'sans-serif'],
+                sans: ['Lora', 'serif'],
+                serif: ['Playfair Display', 'serif'],
             },
         },
     },

@@ -12,7 +12,6 @@ const ContactPage: React.FC = () => {
             <p>Get in touch for questions, or to book a free 15-minute consultation.</p>
           </div>
         </div>
-<<<<<<< HEAD
         <div className="bg-[#4D5842] p-12 text-[#FAF8F6]">
           <p className="text-sm font-light leading-relaxed mb-6 italic">
             PLEASE NOTE: If you opt to use a "Form Block" on your contact page this is not HIPAA-compliant.
@@ -25,16 +24,6 @@ const ContactPage: React.FC = () => {
             <div className="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center">
               <span className="text-xl text-white/20 serif-font">16</span>
             </div>
-=======
-        <div className="bg-[#4D5842] p-16 text-[#FAF8F6]">
-          <p className="text-lg font-light leading-relaxed mb-8 italic opacity-90">
-            PLEASE NOTE: If you opt to use a "Form Block" on your contact page this is not HIPAA-compliant. 
-            Instead, you can embed a HIPAA-compliant form, a link to your client portal, or simply put your email address.
-          </p>
-          <div className="flex items-center gap-6">
-            <div className="w-24 h-24 rounded-full img-placeholder text-[10px]">Img 15</div>
-            <div className="w-24 h-24 rounded-full img-placeholder text-[10px]">Img 16</div>
->>>>>>> 3fc2329ba5ba5efc9cdd25fce8090578a6f7dc9c
           </div>
         </div>
       </div>
@@ -63,20 +52,14 @@ const ContactPage: React.FC = () => {
             <p>Monday – Friday<br />10am – 6pm</p>
           </div>
         </div>
-<<<<<<< HEAD
         <div className="aspect-[16/9] bg-[#E8E2D9]/20 overflow-hidden shadow-2xl flex items-center justify-center">
           <span className="text-4xl text-white/20 serif-font">17</span>
-=======
-        <div className="aspect-[16/9] bg-stone-300 overflow-hidden shadow-2xl img-placeholder text-2xl">
-          Img 17
->>>>>>> 3fc2329ba5ba5efc9cdd25fce8090578a6f7dc9c
         </div>
       </div>
 
       <div className="py-48 px-10 max-w-[1440px] mx-auto">
         <h2 className="text-6xl md:text-7xl serif-font text-[#4D5842] mb-16 italic font-light">Find me on social.</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-<<<<<<< HEAD
           <div className="aspect-square bg-[#E8E2D9] flex items-center justify-center">
             <span className="text-2xl text-[#4D5842]/20 serif-font">18</span>
           </div>
@@ -89,12 +72,6 @@ const ContactPage: React.FC = () => {
           <div className="aspect-square bg-[#E8E2D9] flex items-center justify-center">
             <span className="text-2xl text-[#4D5842]/20 serif-font">21</span>
           </div>
-=======
-          <div className="aspect-square img-placeholder">Img 18</div>
-          <div className="aspect-square img-placeholder">Img 19</div>
-          <div className="aspect-square img-placeholder">Img 20</div>
-          <div className="aspect-square img-placeholder">Img 21</div>
->>>>>>> 3fc2329ba5ba5efc9cdd25fce8090578a6f7dc9c
         </div>
       </div>
     </div>

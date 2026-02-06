@@ -12,8 +12,8 @@ module.exports = {
                 accent: "#C28E7E",
             },
             fontFamily: {
-                serif: ['var(--font-playfair)', 'serif'],
-                sans: ['var(--font-inter)', 'sans-serif'],
+                sans: ['Satoshi', 'sans-serif'],
+                serif: ['Bricolage Grotesque', 'sans-serif'],
             },
         },
     },

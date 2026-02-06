@@ -9,15 +9,15 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2 text-center md:text-left animate-fade-in order-1 md:order-2" style={{ animationDelay: '0.2s' }}>
-        <h1 className="text-3xl md:text-[4.5rem] serif-font text-[#4D5842] leading-[1.1] mb-8 italic font-light">
-          Live your life <br />
-          in full bloom
+        <h1 className="text-3xl md:text-[4.5rem] md:text-[5.5rem] serif-font text-[#2D3339] leading-[1.1] mb-8 font-light">
+          Find Your <br />
+          Steady Ground
         </h1>
-        <p className="text-lg md:text-xl font-light text-[#333333]/70 mb-12 tracking-wide">
-          Therapy for Adults in Minneapolis, MN.
+        <p className="text-lg md:text-xl font-light text-[#2D3339]/80 mb-12 tracking-wide leading-relaxed max-w-xl">
+          Anxiety and Trauma Therapy in Santa Monica for high-achieving adults who feel functional on the outside but internally exhausted.
         </p>
         <div className="flex justify-center md:justify-start">
-          <button className="px-10 py-4 border border-[#4D5842]/30 text-[9px] uppercase tracking-[0.4em] font-semibold text-[#4D5842] hover:bg-[#4D5842] hover:text-white transition-all duration-500 rounded-sm">
+          <button className="px-10 py-5 bg-[#C28E7E] text-white text-[10px] uppercase tracking-[0.4em] font-bold hover:bg-[#2D3339] transition-all duration-500 rounded-sm shadow-sm">
             CONNECT WITH ME →
           </button>
         </div>

@@ -6,12 +6,12 @@ interface Props {
 
 const EmpathySection: React.FC<Props> = ({ onNavigate }) => {
   return (
-    <section className="bg-[#FAF8F6]">
+    <section className="bg-[#E0E5E9]">
       <div className="flex flex-col md:flex-row min-h-screen">
-        <div className="w-full md:w-1/2 relative bg-[#E8E2D9] flex items-center justify-center min-h-[600px] overflow-hidden">
-          <span className="text-6xl text-[#4D5842]/20 serif-font italic">img6</span>
+        <div className="w-full md:w-1/2 relative bg-[#D1D9E0] flex items-center justify-center min-h-[600px] overflow-hidden">
+          <span className="text-6xl text-[#2D3339]/20 serif-font italic font-light">img6</span>
         </div>
-        <div className="w-full md:w-1/2 bg-[#C0C9D1] flex flex-col justify-center text-[#2D3339]">
+        <div className="w-full md:w-1/2 bg-[#E8E2D9] flex flex-col justify-center text-[#2D3339]">
           <div className="px-12 md:px-24 py-20 flex-grow flex flex-col justify-center">
             <h2 className="text-3xl md:text-[4rem] serif-font leading-[1.05] mb-10 font-medium">
               You don't have to <br />

@@ -6,13 +6,13 @@ const ContactPage: React.FC = () => {
     <div className="pt-56 pb-20">
       <div className="px-10 max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center mb-32">
         <div>
-          <h1 className="text-7xl md:text-[8rem] serif-font text-[#4D5842] mb-12 font-light italic leading-tight">Let's Connect</h1>
-          <div className="space-y-8 text-2xl font-light text-[#333333]/80 max-w-xl">
-            <p className="font-medium text-[#4D5842]">Starting therapy is courageous.</p>
+          <h1 className="text-7xl md:text-[8rem] serif-font text-[#2D3339] mb-12 font-light italic leading-tight">Let's Connect</h1>
+          <div className="space-y-8 text-2xl font-light text-[#2D3339]/80 max-w-xl">
+            <p className="font-medium text-[#2D3339]">Starting therapy is courageous.</p>
             <p>Get in touch for questions, or to book a free 15-minute consultation.</p>
           </div>
         </div>
-        <div className="bg-[#4D5842] p-12 text-[#FAF8F6]">
+        <div className="bg-[#C28E7E] p-12 text-white shadow-xl">
           <p className="text-sm font-light leading-relaxed mb-6 italic">
             PLEASE NOTE: If you opt to use a "Form Block" on your contact page this is not HIPAA-compliant.
             Instead, you can embed a HIPAA-compliant form, a link to your client portal, or simply put your email address.
@@ -30,9 +30,9 @@ const ContactPage: React.FC = () => {
 
       <div className="bg-[#E8E2D9] py-32 px-10 text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl md:text-7xl serif-font text-[#4D5842] mb-12 italic font-light">Book an appointment.</h2>
-          <p className="text-2xl font-light text-[#333333]/70 mb-16 leading-relaxed">
-            Add some text here if you like, and add your scheduling widget below (you can get one by signing up for a scheduling account through Squarespace, the top-tier plan is HIPAA compliant OR you can use your client portal).
+          <h2 className="text-5xl md:text-7xl serif-font text-[#2D3339] mb-12 font-light">Book an appointment.</h2>
+          <p className="text-2xl font-light text-[#2D3339]/70 mb-16 leading-relaxed">
+            Add some text here if you like, and add your scheduling widget below. I use HIPAA-compliant scheduling to ensure your privacy and ease of access.
           </p>
           <div className="bg-white p-20 shadow-xl max-w-2xl mx-auto">
             <h3 className="text-3xl serif-font text-[#333333] mb-8">This page is not active</h3>
@@ -43,22 +43,22 @@ const ContactPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="py-48 px-10 bg-[#4D5842] text-[#FAF8F6] grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+      <div className="py-24 px-10 bg-[#C28E7E] text-white grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
         <div>
-          <h2 className="text-6xl md:text-8xl serif-font mb-12 italic font-light">My Office</h2>
+          <h2 className="text-6xl md:text-8xl serif-font mb-12 font-light leading-tight">My Office</h2>
           <div className="space-y-8 text-2xl font-light opacity-90">
-            <p>123 Example Street<br />Minneapolis, MN</p>
-            <h4 className="text-3xl md:text-5xl serif-font mt-16">Hours</h4>
-            <p>Monday – Friday<br />10am – 6pm</p>
+            <p>123 Wilshire Blvd, Santa Monica, CA 90401</p>
+            <h4 className="text-3xl md:text-5xl serif-font mt-16 font-light">Hours</h4>
+            <p>Monday – Thursday<br />9:00 AM – 6:00 PM</p>
           </div>
         </div>
-        <div className="aspect-[16/9] bg-[#E8E2D9]/20 overflow-hidden shadow-2xl flex items-center justify-center">
+        <div className="aspect-[16/9] bg-white/10 overflow-hidden shadow-2xl flex items-center justify-center">
           <span className="text-4xl text-white/20 serif-font">17</span>
         </div>
       </div>
 
       <div className="py-48 px-10 max-w-[1440px] mx-auto">
-        <h2 className="text-6xl md:text-7xl serif-font text-[#4D5842] mb-16 italic font-light">Find me on social.</h2>
+        <h2 className="text-6xl md:text-7xl serif-font text-[#2D3339] mb-16 font-light">Find me on social.</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="aspect-square bg-[#E8E2D9] flex items-center justify-center">
             <span className="text-2xl text-[#4D5842]/20 serif-font">18</span>

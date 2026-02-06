@@ -8,8 +8,12 @@ const EmpathySection: React.FC<Props> = ({ onNavigate }) => {
   return (
     <section className="bg-[#e8ebed]">
       <div className="flex flex-col md:flex-row min-h-screen">
-        <div className="w-full md:w-1/2 relative bg-gray-200 flex items-center justify-center min-h-[600px] overflow-hidden">
-          <span className="text-6xl text-[#2c3f70]/20 serif-font italic font-bold">img6</span>
+        <div className="w-full md:w-1/2 relative bg-gray-200 min-h-[600px] overflow-hidden">
+          <img
+            src="/assets/images/img_6.jpg"
+            alt="Supportive Therapy Environment"
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="w-full md:w-1/2 bg-white flex flex-col justify-center text-[#2c3f70]">
           <div className="px-12 md:px-24 py-20 flex-grow flex flex-col justify-center">

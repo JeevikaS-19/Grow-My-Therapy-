@@ -26,13 +26,21 @@ const AboutSection: React.FC<Props> = ({ onNavigate }) => {
       <div className="w-full md:w-1/2 flex justify-center py-20">
         <div className="relative">
           {/* Main Arched Frame */}
-          <div className="w-full md:w-[450px] aspect-[4.5/6.5] arched-image overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.12)] relative z-10 bg-white border border-[#2c3f70]/5 flex items-center justify-center">
-            <span className="text-6xl text-[#2c3f70]/20 serif-font italic font-bold">img7</span>
+          <div className="w-full md:w-[450px] aspect-[4.5/6.5] arched-image overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.12)] relative z-10 bg-white border border-[#2c3f70]/5">
+            <img
+              src="/assets/images/Dr. Maya Reynolds.png"
+              alt="Dr. Maya Reynolds"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Overlapping Circle Frame */}
           <div className="absolute -bottom-12 -right-12 md:-bottom-20 md:-right-20 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-[15px] md:border-[24px] border-[#e8ebed] shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-20 bg-white flex items-center justify-center">
-            <span className="text-4xl text-[#2c3f70]/20 serif-font italic font-bold">img8</span>
+            <img
+              src="/assets/images/img_8.jpg"
+              alt="Dr. Maya Reynolds Professional Background"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

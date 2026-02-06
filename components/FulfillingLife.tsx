@@ -29,8 +29,12 @@ const FulfillingLife: React.FC<Props> = ({ onNavigate }) => {
             </button>
           </div>
         </div>
-        <div className="w-full md:w-1/2 relative min-h-[500px] bg-gray-200 flex items-center justify-center">
-          <span className="text-4xl text-[#2c3f70]/20 serif-font italic font-bold">img2</span>
+        <div className="w-full md:w-1/2 relative min-h-[500px] bg-gray-200">
+          <img
+            src="/assets/images/live_a_ful_life.jpg"
+            alt="Live a Fulfilling Life"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>

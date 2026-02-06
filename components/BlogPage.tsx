@@ -19,8 +19,12 @@ const BlogPage: React.FC = () => {
     <div className="pt-56 px-10 pb-20 max-w-[1440px] mx-auto bg-[#e8ebed]">
       <div className="flex flex-col md:flex-row items-center gap-20 mb-32">
         <div className="w-full md:w-1/3">
-          <div className="arched-image overflow-hidden aspect-[3/4] shadow-xl bg-gray-200 flex items-center justify-center text-center border border-[#2c3f70]/5">
-            <span className="text-4xl text-[#2c3f70]/20 serif-font italic font-bold">img10</span>
+          <div className="arched-image overflow-hidden aspect-[3/4] shadow-xl bg-gray-200 border border-[#2c3f70]/5">
+            <img
+              src="/assets/images/img_9.jpg"
+              alt="Steady Ground Blog"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
         <div className="w-full md:w-2/3">

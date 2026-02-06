@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SpecialtyCard: React.FC<{ title: string; description: string; index: number; className?: string }> = ({ title, description, index, className }) => (
+const SpecialtyCard: React.FC<{ title: string; description: string; image: string; className?: string }> = ({ title, description, image, className }) => (
   <div className={`bg-[#c8d4e5] rounded-3xl shadow-sm p-12 flex flex-col h-full items-center text-center animate-fade-in group hover:shadow-md transition-all duration-500 border border-[#2c3f70]/5 ${className}`}>
     <h3 className="text-[22px] md:text-[24px] serif-font text-[#2c3f70] mb-8 font-bold tracking-tight">
       {title}
@@ -9,9 +9,11 @@ const SpecialtyCard: React.FC<{ title: string; description: string; index: numbe
       {description}
     </p>
     <div className="w-56 h-56 rounded-full overflow-hidden shadow-lg bg-[#e8ebed]/50 flex items-center justify-center transition-transform duration-700 group-hover:scale-105">
-      <div className="w-full h-full bg-[#e8ebed]/50 flex items-center justify-center">
-        <span className="text-3xl text-[#2c3f70]/20 serif-font font-bold">{index}</span>
-      </div>
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-full object-cover"
+      />
     </div>
   </div>
 );
@@ -21,17 +23,17 @@ const Specialties: React.FC = () => {
     {
       title: "Anxiety & Panic",
       description: "Learn to navigate overwhelming worry and physical panicky sensations with grounded, evidence-based somatic tools.",
-      index: 1
+      image: "/assets/images/spe_1.jpg"
     },
     {
       title: "Trauma Recovery",
       description: "Process past experiences in a safe, collaborative space to reclaim your sense of safety and agency in the present.",
-      index: 2
+      image: "/assets/images/spe_2.jpg"
     },
     {
       title: "Professional Burnout",
       description: "Address the deep exhaustion of high-achievement and rediscover a sustainable balance between work and wellness.",
-      index: 3
+      image: "/assets/images/spe_3.jpg"
     },
   ];
 

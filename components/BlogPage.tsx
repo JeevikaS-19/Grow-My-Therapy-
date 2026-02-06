@@ -21,8 +21,8 @@ const BlogPage: React.FC = () => {
         <div className="w-full md:w-1/3">
           <div className="arched-image overflow-hidden aspect-[3/4] shadow-xl bg-gray-200 border border-[#2c3f70]/5">
             <img
-              src="/assets/images/img_9.jpg"
-              alt="Steady Ground Blog"
+              src="/assets/images/img1_dr maya.png"
+              alt="The Steady Ground Blog"
               className="w-full h-full object-cover"
             />
           </div>

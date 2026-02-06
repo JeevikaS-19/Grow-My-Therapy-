@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import BlogPage from './components/BlogPage';
 import ContactPage from './components/ContactPage';
 import BlogPostOne from './components/BlogPostOne';
+import PlaceholderPage from './components/PlaceholderPage';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -59,6 +60,12 @@ const App: React.FC = () => {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/blog-post-one" element={<BlogPostOne />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy-policy" element={<PlaceholderPage />} />
+          <Route path="/good-faith-estimate" element={<PlaceholderPage />} />
+          <Route path="/terms-and-conditions" element={<PlaceholderPage />} />
+          <Route path="/disclaimer" element={<PlaceholderPage />} />
+          {/* Catch-all route for 404s */}
+          <Route path="*" element={<PlaceholderPage />} />
         </Routes>
       </main>
       <Footer />

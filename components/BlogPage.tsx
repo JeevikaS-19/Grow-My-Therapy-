@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 
 const BlogCard: React.FC<{ title: string; date: string; index: number; slug: string }> = ({ title, date, index, slug }) => (
   <Link to={`/blog/${slug}`} className="group cursor-pointer block">
-    <div className="aspect-[16/10] overflow-hidden mb-6 bg-gray-200 flex items-center justify-center border border-[#2c3f70]/5">
-      <span className="text-3xl text-[#2c3f70]/20 serif-font italic font-bold">img{index}</span>
+    <div className="aspect-[16/10] overflow-hidden mb-6 bg-gray-200 border border-[#2c3f70]/5">
+      <img
+        src={`/assets/images/img_${index}.jpg`}
+        alt={title}
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+      />
     </div>
     <p className="text-[10px] text-[#2c3f70]/50 tracking-widest mb-2 font-bold">{date}</p>
     <h3 className="text-2xl md:text-4xl serif-font text-[#2c3f70] mb-4 font-bold italic">{title}</h3>
@@ -21,7 +25,7 @@ const BlogPage: React.FC = () => {
         <div className="w-full md:w-1/3">
           <div className="arched-image overflow-hidden aspect-[3/4] shadow-xl bg-gray-200 border border-[#2c3f70]/5">
             <img
-              src="/assets/images/img1_dr maya.png"
+              src="/assets/images/img_10.jpg"
               alt="The Steady Ground Blog"
               className="w-full h-full object-cover"
             />

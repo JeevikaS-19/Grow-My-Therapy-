@@ -8,29 +8,17 @@ const Footer: React.FC = () => {
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-24">
           <div className="flex flex-col">
-<<<<<<< HEAD
             <h3
               onClick={() => navigate('/')}
               className="text-4xl md:text-6xl serif-font text-[#4D5842] font-light tracking-tight mb-12 italic cursor-pointer hover:opacity-70 transition-opacity"
-=======
-            <h3 
-              onClick={() => onNavigate('home')}
-              className="text-3xl md:text-5xl serif-font text-[#4D5842] font-light mb-10 italic cursor-pointer hover:opacity-70 transition-opacity"
->>>>>>> 3fc2329ba5ba5efc9cdd25fce8090578a6f7dc9c
             >
               Lilac Template
             </h3>
             <div className="space-y-3 text-sm font-light text-[#333333]/60 leading-relaxed">
               <p>123 Example Road<br />Minneapolis, MN</p>
-<<<<<<< HEAD
               <p
                 onClick={() => navigate('/contact')}
                 className="underline underline-offset-8 decoration-[#4D5842]/20 hover:decoration-[#4D5842] transition-all cursor-pointer"
-=======
-              <p 
-                onClick={() => onNavigate('contact')}
-                className="underline underline-offset-4 hover:text-[#4D5842] transition-all cursor-pointer"
->>>>>>> 3fc2329ba5ba5efc9cdd25fce8090578a6f7dc9c
               >
                 email@example.com
               </p>
@@ -47,19 +35,11 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-<<<<<<< HEAD
             <h4 className="text-2xl md:text-4xl serif-font mb-12 text-[#4D5842] font-light italic">Find</h4>
             <nav className="flex flex-col gap-6 text-base font-light text-[#333333]/60">
               <button onClick={() => navigate('/')} className="text-left hover:text-[#4D5842] transition-colors">Home</button>
               <button onClick={() => navigate('/contact')} className="text-left hover:text-[#4D5842] transition-colors">Contact</button>
               <button onClick={() => navigate('/blog')} className="text-left hover:text-[#4D5842] transition-colors">Blog</button>
-=======
-            <h4 className="text-xl md:text-2xl serif-font mb-10 text-[#4D5842] font-light">Find</h4>
-            <nav className="flex flex-col gap-4 text-sm font-light text-[#333333]/60">
-              <button onClick={() => onNavigate('home')} className="text-left hover:text-[#4D5842] transition-colors">Home</button>
-              <button onClick={() => onNavigate('contact')} className="text-left hover:text-[#4D5842] transition-colors">Contact</button>
-              <button onClick={() => onNavigate('blog')} className="text-left hover:text-[#4D5842] transition-colors">Blog</button>
->>>>>>> 3fc2329ba5ba5efc9cdd25fce8090578a6f7dc9c
             </nav>
           </div>
         </div>

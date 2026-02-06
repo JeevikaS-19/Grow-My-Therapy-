@@ -3,13 +3,8 @@ import React, { useState } from 'react';
 const CredentialItem: React.FC<{ title: string; content: string }> = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-<<<<<<< HEAD
     <div className="border-b border-[#4D5842]/20 py-8 first:border-t">
       <button
-=======
-    <div className="border-b border-[#4D5842]/20 py-4 last:border-b">
-      <button 
->>>>>>> 3fc2329ba5ba5efc9cdd25fce8090578a6f7dc9c
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center text-left group"
       >
@@ -27,7 +22,6 @@ const CredentialItem: React.FC<{ title: string; content: string }> = ({ title, c
 
 const ProfessionalBackground: React.FC = () => {
   return (
-<<<<<<< HEAD
     <section className="py-10 px-10 bg-[#FAF8F6] flex flex-col items-center text-[#4D5842]">
       <div className="max-w-[1000px] w-full">
         <h2 className="text-3xl md:text-5xl text-center serif-font mb-12 italic font-light">My Professional Background</h2>
@@ -35,15 +29,6 @@ const ProfessionalBackground: React.FC = () => {
           <CredentialItem
             title="Education"
             content="M.S. in Counseling Psychology from the University of Minnesota, B.A. in Psychology from Macalester College."
-=======
-    <section className="py-20 px-6">
-      <div className="max-w-[1000px] mx-auto text-center">
-        <h2 className="text-3xl md:text-[3.5rem] serif-font mb-16 text-[#4D5842] font-light">My Professional Background</h2>
-        <div className="w-full border-t border-[#4D5842]/20 text-left">
-          <CredentialItem 
-            title="Education" 
-            content="M.S. in Counseling Psychology from the University of Minnesota, B.A. in Psychology from Macalester College." 
->>>>>>> 3fc2329ba5ba5efc9cdd25fce8090578a6f7dc9c
           />
           <CredentialItem
             title="Licensure"

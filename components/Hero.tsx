@@ -3,27 +3,25 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="pt-48 pb-32 px-10 max-w-[1440px] mx-auto flex flex-col md:flex-row items-center gap-16 md:gap-24">
+    <section className="pt-10 pb-16 px-10 max-w-[1440px] mx-auto flex flex-col md:flex-row items-center gap-16 md:gap-32">
       <div className="w-full md:w-1/2 flex justify-center animate-fade-in order-2 md:order-1">
-        <div className="relative w-full max-w-[420px] aspect-[3/4] arched-image overflow-hidden shadow-[0_30px_90px_-15px_rgba(0,0,0,0.12)]">
-          <img 
-            src="https://images.unsplash.com/photo-1550592704-6c76defa9985?auto=format&fit=crop&q=80&w=800" 
-            alt="Soft Lilac aesthetic portrait" 
-            className="w-full h-full object-cover"
-          />
+        <div className="relative w-full max-w-[480px] aspect-[4/6] arched-image overflow-hidden shadow-[0_30px_90px_-15px_rgba(0,0,0,0.12)] bg-[#E8E2D9] flex items-center justify-center">
+          <span className="text-4xl text-[#4D5842]/20 serif-font">1</span>
         </div>
       </div>
       <div className="w-full md:w-1/2 text-center md:text-left animate-fade-in order-1 md:order-2" style={{ animationDelay: '0.2s' }}>
-        <h1 className="text-6xl md:text-[6.5rem] leading-[1.05] text-[#4D5842] mb-12 serif-font">
-          Live your life<br />
-          <span className="italic font-light">in full bloom</span>
+        <h1 className="text-3xl md:text-[4.5rem] serif-font text-[#4D5842] leading-[1.1] mb-8 italic font-light">
+          Live your life <br />
+          in full bloom
         </h1>
-        <p className="text-xs md:text-sm uppercase tracking-[0.4em] font-light text-[#333333]/60 mb-16">
+        <p className="text-lg md:text-xl font-light text-[#333333]/70 mb-12 tracking-wide">
           Therapy for Adults in Minneapolis, MN.
         </p>
-        <button className="border border-[#4D5842] px-16 py-5 text-[10px] uppercase tracking-[0.4em] font-medium hover:bg-[#4D5842] hover:text-[#FAF8F6] transition-all duration-700 ease-in-out">
-          CONNECT WITH ME →
-        </button>
+        <div className="flex justify-center md:justify-start">
+          <button className="px-10 py-4 border border-[#4D5842]/30 text-[9px] uppercase tracking-[0.4em] font-semibold text-[#4D5842] hover:bg-[#4D5842] hover:text-white transition-all duration-500 rounded-sm">
+            CONNECT WITH ME →
+          </button>
+        </div>
       </div>
     </section>
   );

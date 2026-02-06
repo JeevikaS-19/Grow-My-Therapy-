@@ -1,5 +1,5 @@
-
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import FulfillingLife from './components/FulfillingLife';
@@ -12,12 +12,26 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import BlogPage from './components/BlogPage';
 import ContactPage from './components/ContactPage';
+import BlogPostOne from './components/BlogPostOne';
+
+const HomePage = () => {
+  const navigate = useNavigate();
+  return (
+    <>
+      <div><Hero /></div>
+      <div><FulfillingLife onNavigate={() => navigate('/contact')} /></div>
+      <div><Specialties /></div>
+      <div><EmpathySection onNavigate={() => navigate('/contact')} /></div>
+      <div><AboutSection onNavigate={() => navigate('/contact')} /></div>
+      <div><FAQs /></div>
+      <div><ProfessionalBackground /></div>
+      <div><FinalCTA onNavigate={() => navigate('/contact')} /></div>
+    </>
+  );
+};
 
 const App: React.FC = () => {
-  const [currentPage, setCurrentPage] = useState<'home' | 'blog' | 'contact'>('home');
-
   useEffect(() => {
-    window.scrollTo(0, 0);
     const observerOptions = {
       threshold: 0.1,
     };
@@ -34,37 +48,20 @@ const App: React.FC = () => {
     revealElements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, [currentPage]);
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'blog':
-        return <BlogPage />;
-      case 'contact':
-        return <ContactPage />;
-      default:
-        return (
-          <>
-            <div className="reveal"><Hero /></div>
-            <div className="reveal"><FulfillingLife onNavigate={() => setCurrentPage('contact')} /></div>
-            <div className="reveal"><Specialties /></div>
-            <div className="reveal"><EmpathySection onNavigate={() => setCurrentPage('contact')} /></div>
-            <div className="reveal"><AboutSection onNavigate={() => setCurrentPage('contact')} /></div>
-            <div className="reveal"><FAQs /></div>
-            <div className="reveal"><ProfessionalBackground /></div>
-            <div className="reveal"><FinalCTA onNavigate={() => setCurrentPage('contact')} /></div>
-          </>
-        );
-    }
-  };
+  }, []);
 
   return (
     <div className="min-h-screen">
-      <Header onNavigate={setCurrentPage} currentPage={currentPage} />
-      <main className="fade-in">
-        {renderPage()}
+      <Header />
+      <main className="fade-in pt-32">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/blog-post-one" element={<BlogPostOne />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </main>
-      <Footer onNavigate={setCurrentPage} />
+      <Footer />
     </div>
   );
 };

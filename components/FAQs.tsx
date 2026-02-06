@@ -5,7 +5,7 @@ const AccordionItem: React.FC<{ question: string; answer: string }> = ({ questio
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="border-b border-[#4D5842]/20 py-10 first:border-t">
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center group text-left"
       >
@@ -23,29 +23,25 @@ const AccordionItem: React.FC<{ question: string; answer: string }> = ({ questio
 
 const FAQs: React.FC = () => {
   return (
-    <section className="py-40 px-8 max-w-[1440px] mx-auto flex flex-col md:flex-row gap-20 md:gap-32">
+    <section className="py-10 px-8 max-w-[1440px] mx-auto flex flex-col md:flex-row gap-16 md:gap-24">
       <div className="w-full md:w-[40%]">
-        <div className="arched-image overflow-hidden w-full aspect-[3/4] shadow-2xl relative grayscale-[20%]">
-          <img 
-            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800" 
-            alt="Editorial aesthetic interior" 
-            className="w-full h-full object-cover"
-          />
+        <div className="arched-image overflow-hidden w-full aspect-[3/4] shadow-2xl relative bg-[#E8E2D9] flex items-center justify-center">
+          <span className="text-4xl text-[#4D5842]/20 serif-font">9</span>
         </div>
       </div>
       <div className="w-full md:w-[60%] flex flex-col justify-center">
-        <h2 className="text-6xl md:text-8xl serif-font mb-20 text-[#4D5842] italic font-light">FAQs</h2>
+        <h2 className="text-4xl md:text-6xl serif-font mb-10 text-[#4D5842] italic font-light">FAQs</h2>
         <div className="w-full">
-          <AccordionItem 
-            question="Do you take insurance?" 
+          <AccordionItem
+            question="Do you take insurance?"
             answer="Answer goes here. Yes, I am currently in-network with several major providers including Aetna, Blue Cross Blue Shield, and United Healthcare. I also provide superbills for out-of-network reimbursement."
           />
-          <AccordionItem 
-            question="What are your rates?" 
+          <AccordionItem
+            question="What are your rates?"
             answer="Individual sessions are $175 for 50 minutes. I believe quality care should be accessible, so I offer sliding scale spots for those who qualify."
           />
-          <AccordionItem 
-            question="Do you have any openings?" 
+          <AccordionItem
+            question="Do you have any openings?"
             answer="I am currently accepting new clients for Tuesday and Thursday afternoon slots. Reach out to schedule a free 15-minute consultation."
           />
         </div>

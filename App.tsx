@@ -11,6 +11,7 @@ import ProfessionalBackground from './components/ProfessionalBackground';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import BlogPage from './components/BlogPage';
+import OurOffice from './components/OurOffice';
 import ContactPage from './components/ContactPage';
 import BlogPostOne from './components/BlogPostOne';
 import BlogPostTwo from './components/BlogPostTwo';
@@ -28,8 +29,9 @@ const HomePage = () => {
       <div><Specialties /></div>
       <div><EmpathySection onNavigate={() => navigate('/contact')} /></div>
       <div><AboutSection onNavigate={() => navigate('/contact')} /></div>
-      <div><FAQs /></div>
       <div><ProfessionalBackground /></div>
+      <div><OurOffice /></div>
+      <div><FAQs /></div>
       <div><FinalCTA onNavigate={() => navigate('/contact')} /></div>
     </>
   );

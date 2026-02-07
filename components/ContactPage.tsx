@@ -4,26 +4,44 @@ import React from 'react';
 const ContactPage: React.FC = () => {
   return (
     <div className="pt-56 pb-20 bg-[#e8ebed]">
-      <div className="px-10 max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center mb-32">
+      <div className="px-10 max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-start mb-48">
         <div>
           <h1 className="text-7xl md:text-8xl serif-font text-[#2c3f70] mb-12 font-bold italic leading-tight">Let's Connect</h1>
-          <div className="space-y-8 text-2xl font-normal text-[#2c3f70]/80 max-w-xl">
-            <p className="font-bold text-[#2c3f70]">Starting therapy is courageous.</p>
-            <p>Get in touch for questions, or to book a free 15-minute consultation.</p>
+          <div className="space-y-6 text-2xl font-normal text-[#2c3f70]/80 max-w-xl mb-16">
+            <p className="text-[#2c3f70]">Starting therapy is courageous.</p>
+            <p>Get in touch for questions, or to book a free <br />15-minute consultation.</p>
+          </div>
+
+          <div className="relative mt-20 max-w-md">
+            {/* Arched Image (img_15) */}
+            <div className="w-full md:w-[380px] aspect-[4.5/6] arched-image overflow-hidden shadow-2xl relative z-10 bg-white">
+              <img
+                src="/assets/images/img_15.jpg"
+                alt="Support"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Overlapping Circle (img_16) */}
+            <div className="absolute -bottom-12 -right-12 md:-bottom-16 md:-right-16 w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl z-20 bg-white">
+              <img
+                src="/assets/images/img_16.jpg"
+                alt="Flowers"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
-        <div className="bg-[#2c3f70] p-12 text-white shadow-xl">
-          <p className="text-sm font-normal leading-relaxed mb-6 italic opacity-80">
-            PLEASE NOTE: If you opt to use a "Form Block" on your contact page this is not HIPAA-compliant.
-            Instead, you can embed a HIPAA-compliant form, a link to your client portal, or simply put your email address.
-          </p>
-          <div className="flex items-center gap-4">
-            <div className="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center">
-              <span className="text-xl text-white/20 serif-font font-bold">15</span>
-            </div>
-            <div className="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center">
-              <span className="text-xl text-white/20 serif-font font-bold">16</span>
-            </div>
+
+        <div className="bg-[#26321d] p-16 text-white shadow-xl mt-10">
+          <p className="text-xl font-bold mb-8 uppercase tracking-widest opacity-90">PLEASE NOTE:</p>
+          <div className="space-y-8 text-lg md:text-xl font-normal leading-relaxed opacity-80">
+            <p>
+              If you opt to use a "Form Block" on your contact page this is not HIPAA-compliant.
+            </p>
+            <p>
+              Squarespace stores data that is input into forms in the Marketing tab under Profiles. Instead, you can embed a HIPAA-compliant form, a link to your client portal, or simply put your email address.
+            </p>
           </div>
         </div>
       </div>
@@ -52,25 +70,25 @@ const ContactPage: React.FC = () => {
             <p>Monday – Thursday<br />9:00 AM – 6:00 PM</p>
           </div>
         </div>
-        <div className="aspect-[16/9] bg-white/10 overflow-hidden shadow-2xl flex items-center justify-center border border-white/5">
-          <span className="text-4xl text-white/20 serif-font font-bold">17</span>
+        <div className="aspect-[16/9] overflow-hidden shadow-2xl border border-white/5">
+          <img src="/assets/images/office1.jpeg" alt="Office Space" className="w-full h-full object-cover" />
         </div>
       </div>
 
       <div className="py-48 px-10 max-w-[1440px] mx-auto bg-[#e8ebed]">
         <h2 className="text-6xl md:text-7xl serif-font text-[#2c3f70] mb-16 font-bold">Find me on social.</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="aspect-square bg-gray-200 flex items-center justify-center border border-[#2c3f70]/5">
-            <span className="text-2xl text-[#2c3f70]/20 serif-font font-bold">18</span>
+          <div className="aspect-square overflow-hidden border border-[#2c3f70]/5">
+            <img src="/assets/images/img_18.jpg" alt="Social Post 1" className="w-full h-full object-cover" />
           </div>
-          <div className="aspect-square bg-gray-200 flex items-center justify-center border border-[#2c3f70]/5">
-            <span className="text-2xl text-[#2c3f70]/20 serif-font font-bold">19</span>
+          <div className="aspect-square overflow-hidden border border-[#2c3f70]/5">
+            <img src="/assets/images/img_19.jpg" alt="Social Post 2" className="w-full h-full object-cover" />
           </div>
-          <div className="aspect-square bg-gray-200 flex items-center justify-center border border-[#2c3f70]/5">
-            <span className="text-2xl text-[#2c3f70]/20 serif-font font-bold">20</span>
+          <div className="aspect-square overflow-hidden border border-[#2c3f70]/5">
+            <img src="/assets/images/img_20.jpg" alt="Social Post 3" className="w-full h-full object-cover" />
           </div>
-          <div className="aspect-square bg-gray-200 flex items-center justify-center border border-[#2c3f70]/5">
-            <span className="text-2xl text-[#2c3f70]/20 serif-font font-bold">21</span>
+          <div className="aspect-square overflow-hidden border border-[#2c3f70]/5">
+            <img src="/assets/images/img_21.jpg" alt="Social Post 4" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>

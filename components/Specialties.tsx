@@ -27,7 +27,7 @@ const Specialties: React.FC = () => {
     },
     {
       title: "Trauma Recovery",
-      description: "Process past experiences in a safe, collaborative space to reclaim your sense of safety and agency in the present.",
+      description: "Process past patterns using EMDR and body-oriented tools. We'll work at a careful pace with an emphasis on safety, stabilization, and regulation.",
       image: "/assets/images/spe_2.jpg"
     },
     {

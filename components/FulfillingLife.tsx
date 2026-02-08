@@ -13,10 +13,10 @@ const FulfillingLife: React.FC<Props> = ({ onNavigate }) => {
             <h2 className="text-3xl md:text-5xl text-[#2c3f70] mb-8 serif-font leading-tight font-bold transition-colors">Live a fulfilling life.</h2>
             <div className="max-w-md space-y-10 text-[#2c3f70]/80 font-normal leading-[1.8] text-lg">
               <p>
-                Life can be challenging—especially when you're trying to balance your personal and professional life.
+                Therapy can become a space to slow down, reconnect, and develop more sustainable ways of living and working.
               </p>
               <p>
-                It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.
+                I help entrepreneurs, creatives, and professionals who feel disconnected from themselves after years of pushing through stress find a path back to clarity and regulation.
               </p>
             </div>
           </div>

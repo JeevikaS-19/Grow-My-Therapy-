@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
           Steady Ground
         </h1>
         <p className="text-lg md:text-xl font-normal text-[#2c3f70]/80 mb-12 tracking-wide leading-relaxed max-w-xl">
-          Anxiety and Trauma Therapy in Santa Monica for high-achieving adults who feel functional on the outside but internally exhausted.
+          Anxiety and trauma therapy in Santa Monica for high-achieving adults who feel functional on the outside while quietly struggling with overthinking, tension, or a sense of always bracing for what’s next.
         </p>
         <div className="flex justify-center md:justify-start">
           <button className="px-10 py-5 bg-[#a5231c] text-white text-[10px] uppercase tracking-[0.4em] font-bold hover:bg-[#8e1e18] hover:scale-105 transition-all duration-500 rounded-sm shadow-lg">

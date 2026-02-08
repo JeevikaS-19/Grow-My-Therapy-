@@ -27,23 +27,23 @@ const EmpathySection: React.FC<Props> = ({ onNavigate }) => {
               <ul className="space-y-5 pl-4">
                 <li className="flex items-center gap-6 text-lg font-normal opacity-90">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#2c3f70]"></span>
-                  Persistent feelings of sadness or hopelessness
+                  Feeling stuck in overthinking or emotionally on edge
                 </li>
                 <li className="flex items-center gap-6 text-lg font-normal opacity-90">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#2c3f70]"></span>
-                  Trouble focusing or making decisions
+                  Constant worry or physical tension in your body
                 </li>
                 <li className="flex items-center gap-6 text-lg font-normal opacity-90">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#2c3f70]"></span>
-                  Difficulty maintaining relationships
+                  Difficulty sleeping or "bracing" for what might go wrong
                 </li>
                 <li className="flex items-center gap-6 text-lg font-normal opacity-90">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#2c3f70]"></span>
-                  Feeling constantly exhausted or unmotivated
+                  Professional burnout and high internal pressure
                 </li>
                 <li className="flex items-center gap-6 text-lg font-normal opacity-90">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#2c3f70]"></span>
-                  A pervasive sense of being overwhelmed
+                  Feeling disconnected after years of pushing through stress
                 </li>
               </ul>
             </div>

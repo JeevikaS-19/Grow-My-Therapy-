@@ -12,7 +12,7 @@ const AboutSection: React.FC<Props> = ({ onNavigate }) => {
         <h2 className="text-4xl md:text-6xl serif-font mb-8 text-[#2c3f70] font-bold leading-tight">Grounded in Science, Led by Empathy.</h2>
         <div className="space-y-8 text-[#2c3f70]/80 font-normal leading-[1.8] text-lg max-w-lg mb-12">
           <p>
-            Hi, I’m Dr. Maya Reynolds. I work with entrepreneurs, creatives, and professionals in Santa Monica who are tired of just "getting through the day." My approach is collaborative and no-nonsense. We won't just sit and talk about your childhood for years; we will look at the physiological and psychological patterns keeping you stuck today, so you can start living with intention again.
+            Hi, I’m Dr. Maya Reynolds. I take a warm, collaborative, and grounded approach to therapy, helping high-achieving adults navigate anxiety, panic, trauma, and burnout. Rather than just talking, I integrate evidence-based methods like CBT, EMDR, and body-oriented techniques to address both the emotional and physiological sides of your experience. We'll work at a pace that feels safe and structured, helping you develop the regulation and insight needed to live with intention again.
           </p>
         </div>
         <button

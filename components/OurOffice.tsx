@@ -34,7 +34,7 @@ const OurOffice: React.FC = () => {
                     </div>
 
                     <p className="text-[#2c3f70] text-lg md:text-xl leading-relaxed italic opacity-90 max-w-xl">
-                        'Healing requires a space where the nervous system can finally settle. Our Santa Monica office is a light-filled sanctuary designed to offer privacy and grounding away from the noise of professional life.'
+                        'Healing requires a space where the nervous system can finally settle. Our Santa Monica office is a light-filled, uncluttered sanctuary designed to offer privacy and grounding, helping you feel at ease the moment you arrive.'
                     </p>
 
                     <div className="space-y-10 pt-4">

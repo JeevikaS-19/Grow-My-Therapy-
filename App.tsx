@@ -19,6 +19,7 @@ import BlogPostThree from './components/BlogPostThree';
 import BlogPostFour from './components/BlogPostFour';
 import PlaceholderPage from './components/PlaceholderPage';
 import ScrollToTop from './components/ScrollToTop';
+import Gatekeeper from './components/Gatekeeper';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -58,28 +59,30 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      <ScrollToTop />
-      <Header />
-      <main className="fade-in pt-32">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/blog-post-one" element={<BlogPostOne />} />
-          <Route path="/blog/blog-post-two" element={<BlogPostTwo />} />
-          <Route path="/blog/blog-post-three" element={<BlogPostThree />} />
-          <Route path="/blog/blog-post-four" element={<BlogPostFour />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/privacy-policy" element={<PlaceholderPage />} />
-          <Route path="/good-faith-estimate" element={<PlaceholderPage />} />
-          <Route path="/terms-and-conditions" element={<PlaceholderPage />} />
-          <Route path="/disclaimer" element={<PlaceholderPage />} />
-          {/* Catch-all route for 404s */}
-          <Route path="*" element={<PlaceholderPage />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <Gatekeeper>
+      <div className="min-h-screen">
+        <ScrollToTop />
+        <Header />
+        <main className="fade-in pt-32">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/blog-post-one" element={<BlogPostOne />} />
+            <Route path="/blog/blog-post-two" element={<BlogPostTwo />} />
+            <Route path="/blog/blog-post-three" element={<BlogPostThree />} />
+            <Route path="/blog/blog-post-four" element={<BlogPostFour />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy-policy" element={<PlaceholderPage />} />
+            <Route path="/good-faith-estimate" element={<PlaceholderPage />} />
+            <Route path="/terms-and-conditions" element={<PlaceholderPage />} />
+            <Route path="/disclaimer" element={<PlaceholderPage />} />
+            {/* Catch-all route for 404s */}
+            <Route path="*" element={<PlaceholderPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Gatekeeper>
   );
 };
 

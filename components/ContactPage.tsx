@@ -70,8 +70,15 @@ const ContactPage: React.FC = () => {
             <p>Monday – Thursday<br />9:00 AM – 6:00 PM</p>
           </div>
         </div>
-        <div className="aspect-[16/9] overflow-hidden shadow-2xl border border-white/5">
-          <img src="/assets/images/office1.jpeg" alt="Office Space" className="w-full h-full object-cover" />
+        <div className="aspect-[16/9] overflow-hidden shadow-2xl border border-white/5 bg-gray-100">
+          <iframe
+            src="https://maps.google.com/maps?cid=4175526099630036887&output=embed"
+            className="w-full h-full border-0"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Office Location Map"
+          ></iframe>
         </div>
       </div>
 
